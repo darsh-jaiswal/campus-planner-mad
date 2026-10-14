@@ -6,6 +6,9 @@ gradle/
 .idea/
 build/
 .git/
-*.png
+/app-preview.png
+/summary-preview.png
+/gallery-preview.png
+/touch-preview.png
 ui-check.xml
 local.properties
