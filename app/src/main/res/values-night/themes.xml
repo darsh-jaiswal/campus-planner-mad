@@ -1,0 +1,1 @@
+<resources><style name="Base.Theme.MADAssignment" parent="Theme.Material3.Light.NoActionBar"><item name="colorPrimary">#4156A6</item><item name="colorOnPrimary">#FFFFFF</item><item name="android:fontFamily">sans</item><item name="android:windowLightStatusBar">true</item></style><style name="Theme.MADAssignment" parent="Base.Theme.MADAssignment" /></resources>

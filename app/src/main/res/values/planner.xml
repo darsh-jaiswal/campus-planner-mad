@@ -1,0 +1,4 @@
+<resources>
+<style name="SectionLabel"><item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item><item name="android:layout_marginTop">22dp</item><item name="android:layout_marginBottom">8dp</item><item name="android:textSize">13sp</item><item name="android:textStyle">bold</item><item name="android:textColor">#5365A8</item></style>
+<string-array name="events"><item>Coding workshop</item><item>Music evening</item><item>Sports meetup</item><item>Design challenge</item></string-array>
+</resources>

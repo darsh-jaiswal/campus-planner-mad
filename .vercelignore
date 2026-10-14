@@ -1,0 +1,11 @@
+app/
+gradle/
+.gradle/
+.gradle-user/
+.android-local/
+.idea/
+build/
+.git/
+*.png
+ui-check.xml
+local.properties

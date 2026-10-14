@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="#F3F5FC">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CAMPUS PLANNER" android:textColor="#5365A8" android:textSize="13sp" android:letterSpacing="0.12"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Make time for
+what you love." android:textSize="32sp" android:textStyle="bold" android:textColor="#182447" android:layout_marginTop="12dp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Plan your next campus experience." android:textColor="#54617D" android:textSize="16sp" android:layout_marginBottom="20dp"/>
+<ImageView android:layout_width="match_parent" android:layout_height="150dp" android:src="@drawable/campus_art" android:scaleType="fitCenter" android:contentDescription="Illustration of the campus with trees and a sunny sky"/>
+<TextView style="@style/SectionLabel" android:text="01  YOUR DETAILS"/>
+<EditText android:id="@+id/nameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:hint="Your name" android:inputType="textPersonName" android:maxLength="60" android:textColor="#182447" android:textColorHint="#54617D" android:autofillHints="name"/>
+<TextView style="@style/SectionLabel" android:text="02  YOUR INTERESTS / CHECK BOXES"/>
+<CheckBox android:id="@+id/techCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Technology" android:textColor="#182447"/>
+<CheckBox android:id="@+id/artCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Art and music" android:textColor="#182447"/>
+<CheckBox android:id="@+id/sportsCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Sports" android:textColor="#182447"/>
+<TextView style="@style/SectionLabel" android:text="03  ATTENDANCE / RADIO BUTTONS"/>
+<RadioGroup android:id="@+id/modeGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:checkedButton="@id/inPersonRadio">
+<RadioButton android:id="@+id/inPersonRadio" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp" android:text="In person" android:textColor="#182447"/>
+<RadioButton android:id="@+id/onlineRadio" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Online" android:textColor="#182447"/>
+</RadioGroup>
+<TextView style="@style/SectionLabel" android:text="04  CHOOSE AN EVENT / SPINNER"/>
+<Spinner android:id="@+id/eventSpinner" android:layout_width="match_parent" android:layout_height="56dp" android:backgroundTint="#5365A8"/>
+<TextView style="@style/SectionLabel" android:text="05  DATE AND TIME"/>
+<Button android:id="@+id/dateButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:contentDescription="Choose event date"/>
+<Button android:id="@+id/timeButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:contentDescription="Choose event time"/>
+<TextView style="@style/SectionLabel" android:text="06  TOUCH LISTENER"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tap or drag on the pad. Watch the coordinates change." android:textColor="#54617D" android:layout_marginBottom="10dp"/>
+<com.example.madassignment.TouchPadView android:id="@+id/touchPad" android:layout_width="match_parent" android:layout_height="180dp" android:contentDescription="Interactive touch pad. Tap or drag to display your touch position." android:focusable="true"/>
+<Button android:id="@+id/previewButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginTop="20dp" android:text="Preview my plan"/>
+<Button android:id="@+id/galleryButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:text="Explore image gallery"/>
+</LinearLayout>
+</ScrollView>
